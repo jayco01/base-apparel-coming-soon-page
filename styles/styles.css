@@ -98,7 +98,7 @@ textarea:not([rows]) {
 
 .logo img {
     width: 6.25rem;
-    margin: 1.875rem;
+    margin: 2rem;
 }
 
 body {
@@ -182,3 +182,8 @@ body {
     margin: 0 auto;
   }
   
+.error-message {
+  color: var(--clr-soft-red);
+  margin: 0;
+  padding-left: 1rem;
+}
