@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/styles/styles.css">
   <title>Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
+  <header>
+    <picture class="logo">
+      <img src="/images/logo.svg" alt="brand logo">
+    </picture>
+  </header>
   <main class="newsletter">
     <picture class="newsletter__image">
+      <img src="/images/hero-mobile.jpg" alt="image of a woman">
     </picture>
-    <section class="newsletter content">
+    <section class="newsletter__content">
       <div class="newsletter__title">
         <h1 class="newsletter__title--thin">We're</h1>
         <h2 class="newsletter__title--thick">coming</h2>
@@ -23,11 +29,11 @@
       <p class="newsletter__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form class="newsletter__form">
         <input type="email" id="email" class="newsletter__email" placeholder="Email Address">
-        <button class="newsletter__btn"></button>
+        <button class="newsletter__btn">
+          <img src="/images/icon-arrow.svg" alt="arrow icon">
+        </button>
       </form>
     </section>
   </main>
-
-  
 </body>
 </html>
