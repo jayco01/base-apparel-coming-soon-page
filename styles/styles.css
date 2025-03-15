@@ -98,7 +98,7 @@ textarea:not([rows]) {
 
 .logo img {
   align-self: flex-start;
-  width: 6.25rem;
+  width: clamp(6.25rem,11vw,9.875);
   margin: 2rem;
 }
 
@@ -126,7 +126,7 @@ body {
 .newsletter__content {
   margin: 4rem 0;
   gap:1.5rem;
-  width: 19.375rem;
+  width: clamp(19.438rem,33vw,27.813rem);
 }
 
 .newsletter__title {
@@ -209,7 +209,22 @@ body {
   padding-left: 1rem;
 }
 
+button:active {
+  transform: scale(1.15);
+}
+
+button:hover {
+  background: var(--clr-desaturated-red);
+}
+
 @media screen and (min-width: 1080px) { 
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
   .newsletter {
     display: grid;
     place-items: start;
@@ -240,6 +255,8 @@ body {
   .newsletter__content {
     grid-area: desc;
     justify-content: start;
+    align-items: start;
+
   }
 
   .newsletter__title {
