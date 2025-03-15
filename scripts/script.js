@@ -1,6 +1,7 @@
 const newsLetterForm = document.querySelector(".newsletter__form")
 const emailInput = document.querySelector(".newsletter__email")
 const errorMessage = document.querySelector(".error-message")
+const errorIcon = document.querySelector(".error-icon")
 
 
 newsLetterForm.addEventListener("submit", function (event) {
@@ -28,6 +29,7 @@ function showError(message) {
     errorMessage.textContent = message;
     errorMessage.style.display = 'block';
     newsLetterForm.style.border = '2px solid var(--clr-soft-red)';
+    errorIcon.style.display = 'block'
 }
 
 
@@ -35,4 +37,6 @@ function successMessage() {
     errorMessage.textContent = "";
     errorMessage.style.display = "none";
     newsLetterForm.style.border = "2px solid green";
+    errorIcon.style.display = 'none'
 }
+
