@@ -224,18 +224,20 @@ button:hover {
     align-items: center;
     margin: 0 auto;
     max-width: 1440px;
+
   }
   .newsletter {
     display: grid;
     place-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    ". logo logo . hero hero hero hero"
-    ". desc desc . hero hero hero hero"
-    ". desc desc . hero hero hero hero"
+    ". logo logo hero hero hero hero hero"
+    ". desc desc hero hero hero hero hero"
+    ". desc desc hero hero hero hero hero"
     ;
     width: 100%;
     column-gap: 10rem;
+    height: 100vh;
   }
 
   .logo-wrapper {
@@ -250,6 +252,7 @@ button:hover {
 
   .newsletter__image-wrapper {
     grid-area: hero;
+    place-self: end;
   }
 
   .newsletter__content {
