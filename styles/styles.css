@@ -252,7 +252,8 @@ button:hover {
 
   .newsletter__image-wrapper {
     grid-area: hero;
-    place-self: end;
+    justify-self: end;
+    align-self: center;
   }
 
   .newsletter__content {
